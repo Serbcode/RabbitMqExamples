@@ -26,8 +26,10 @@ namespace RabbitMq.Consumer.Default
                     channel.BasicConsume("", autoAck: true, consumer: consumer);
 
                     System.Console.WriteLine("Subscribed to the queue 'dev-gueue'... ");
+                    Console.ReadKey();       
                 }
-            }        
+            } 
+            
         }
     }
 }
